@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>Valuta váltó</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>💱 Valuta váltó</h2>
+
+    <label>Összeg (HUF)</label>
+    <input type="number" id="amount" value="5000">
+
+    <label>Cél valuta</label>
+    <select id="currency">
+        <option value="EUR">EUR</option>
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+    </select>
+
+    <button onclick="convert()">Átváltás</button>
+
+    <div id="result" class="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
